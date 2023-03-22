@@ -1,0 +1,291 @@
+{
+	"info": {
+		"_postman_id": "d099c857-72d9-4e17-9e8a-285282a33134",
+		"name": "Maze",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2335028"
+	},
+	"item": [
+		{
+			"name": "Create Maze",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NjksInVzZXJuYW1lIjoic2hpdmExIiwiaWF0IjoxNjc5NDkwNTI3LCJleHAiOjE2Nzk1MTIxMjd9.0NqAGTux0g1bNF7mku6xeYxQDPqss-h42ZgCHHlo9nQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/maze?gridSize=8x8&entrance=A4&walls[]=A3&walls[]=A6&walls[]=B1&walls[]=B2&walls[]=B3&walls[]=B6&walls[]=B7&walls[]=C6&walls[]=C8&walls[]=D2&walls[]=D3&walls[]=D6&walls[]=D8&walls[]=E2&walls[]=E3&walls[]=E4&walls[]=E8&walls[]=F3&walls[]=F4&walls[]=F5&walls[]=F6&walls[]=F8&walls[]=G1&walls[]=G8&walls[]=H3&walls[]=H4&walls[]=H5&walls[]=H6&walls[]=H7&walls[]=H8&walls[]=G3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maze"
+					],
+					"query": [
+						{
+							"key": "gridSize",
+							"value": "8x8"
+						},
+						{
+							"key": "entrance",
+							"value": "A4"
+						},
+						{
+							"key": "walls[]",
+							"value": "A3"
+						},
+						{
+							"key": "walls[]",
+							"value": "A6"
+						},
+						{
+							"key": "walls[]",
+							"value": "B1"
+						},
+						{
+							"key": "walls[]",
+							"value": "B2"
+						},
+						{
+							"key": "walls[]",
+							"value": "B3"
+						},
+						{
+							"key": "walls[]",
+							"value": "B6"
+						},
+						{
+							"key": "walls[]",
+							"value": "B7"
+						},
+						{
+							"key": "walls[]",
+							"value": "C6"
+						},
+						{
+							"key": "walls[]",
+							"value": "C8"
+						},
+						{
+							"key": "walls[]",
+							"value": "D2"
+						},
+						{
+							"key": "walls[]",
+							"value": "D3"
+						},
+						{
+							"key": "walls[]",
+							"value": "D6"
+						},
+						{
+							"key": "walls[]",
+							"value": "D8"
+						},
+						{
+							"key": "walls[]",
+							"value": "E2"
+						},
+						{
+							"key": "walls[]",
+							"value": "E3"
+						},
+						{
+							"key": "walls[]",
+							"value": "E4"
+						},
+						{
+							"key": "walls[]",
+							"value": "E8"
+						},
+						{
+							"key": "walls[]",
+							"value": "F3"
+						},
+						{
+							"key": "walls[]",
+							"value": "F4"
+						},
+						{
+							"key": "walls[]",
+							"value": "F5"
+						},
+						{
+							"key": "walls[]",
+							"value": "F6"
+						},
+						{
+							"key": "walls[]",
+							"value": "F8"
+						},
+						{
+							"key": "walls[]",
+							"value": "G1"
+						},
+						{
+							"key": "walls[]",
+							"value": "G8"
+						},
+						{
+							"key": "walls[]",
+							"value": "H3"
+						},
+						{
+							"key": "walls[]",
+							"value": "H4"
+						},
+						{
+							"key": "walls[]",
+							"value": "H5"
+						},
+						{
+							"key": "walls[]",
+							"value": "H6"
+						},
+						{
+							"key": "walls[]",
+							"value": "H7"
+						},
+						{
+							"key": "walls[]",
+							"value": "H8"
+						},
+						{
+							"key": "walls[]",
+							"value": "G3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NjYsInVzZXJuYW1lIjoic2hpdmEyIiwiaWF0IjoxNjc5NDA0NDA4LCJleHAiOjE2Nzk0MDgwMDh9.8X8iZV5h8BjywrIc9u8yAD3AWtWXA6wrx5nyVgSNZ1Q",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/login?username=shiva&password=Abcd1234!",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "shiva"
+						},
+						{
+							"key": "password",
+							"value": "Abcd1234!"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user?username=shiva&password=Abcd1234!",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "shiva"
+						},
+						{
+							"key": "password",
+							"value": "Abcd1234!"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Maze",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NjgsInVzZXJuYW1lIjoiVGVzdHVzZXIiLCJpYXQiOjE2Nzk0ODYzMjcsImV4cCI6MTY3OTUwNzkyN30.T-2qwOyZrdx1IybhyLo73Ftu0Pf9rQ8glALI-gXSC8M",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/maze",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maze"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Maze Solution",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NjgsInVzZXJuYW1lIjoiVGVzdHVzZXIiLCJpYXQiOjE2Nzk0ODYzMjcsImV4cCI6MTY3OTUwNzkyN30.T-2qwOyZrdx1IybhyLo73Ftu0Pf9rQ8glALI-gXSC8M",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/maze/14/solution?option=max",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maze",
+						"14",
+						"solution"
+					],
+					"query": [
+						{
+							"key": "option",
+							"value": "min",
+							"disabled": true
+						},
+						{
+							"key": "option",
+							"value": "max"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
